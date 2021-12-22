@@ -2,7 +2,7 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException, IllegalAccessException {
-        System.out.println("Введите выражение. Используйте операторы +-*/ и числа в пределах 1-10 или I-X:");
+        System.out.println("Введите выражение. Используйте оператор +-*/ и два числа в пределах 1-10 или I-X:");
         Input input=new Input();
         input.setInpStr(Input.input());
         Input.checkIn(input.getInpStr());
