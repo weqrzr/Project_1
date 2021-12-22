@@ -9,7 +9,7 @@ public class Input {
     }
     public static void checkIn(String x) throws IOException {
         if(!(x.matches("(([0-9]{1,2})|((IV)|(IX)|V?X?I{0,3}))[+*/-](([0-9]{1,2})|((IV)|(IX)|V?X?I{0,3}))"))){
-            throw new IOException("Неверное выражение. Используйте оператор +-*/ и 2 числа в пределах 1-10 или I-X:");
+            throw new IOException("Неверное выражение. Используйте оператор +-*/ и два числа в пределах 1-10 или I-X:");
         }
         if((x.matches("[0-9]{1,2}[+*/-][I-X]{1,4}")|(x.matches("[I-X]{1,4}[+*/-][0-9]{1,2}")))){
             throw new IOException("Не используйте разные системы счисления!");
